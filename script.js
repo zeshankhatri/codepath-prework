@@ -46,12 +46,12 @@ function stopGame() {
 
 // Sound Synthesis Functions
 const freqMap = {
-  1: 261.6,
-  2: 329.6,
-  3: 392,
-  4: 466.2,
-  5: 532.8,
-  6: 604,
+  1: 260.0,
+  2: 325.0,
+  3: 400,
+  4: 460,
+  5: 530.0,
+  6: 600,
 };
 
 function playTone(btn, len) {
