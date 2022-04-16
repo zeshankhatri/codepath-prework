@@ -50,6 +50,9 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 https://stackoverflow.com/questions/30035932/how-do-i-use-this-javascript-variable-in-html
 https://www.rapidtables.com/web/css/css-color.html#purple
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+https://jayuzumi.com/star-wars-soundboards
+https://wallpaperaccess.com/minimalist-star-wars-empire
+https://wallpapersafari.com/w/Gt5v2h
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
