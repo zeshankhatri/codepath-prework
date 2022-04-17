@@ -48,6 +48,7 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
 Coding help:
+
 https://stackoverflow.com/questions/30035932/how-do-i-use-this-javascript-variable-in-html
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
 https://www.w3schools.com/html/html_images_background.asp
@@ -56,6 +57,7 @@ https://www.w3schools.com/cssref/tryit.asp?filename=trycss_js_background-image
 https://programminghead.com/how-to-play-audio-in-html-using-javascript/
 
 Assets and design:
+
 https://www.rapidtables.com/web/css/css-color.html
 https://jayuzumi.com/star-wars-soundboards
 https://www.myinstants.com/instant/roger-roger-star-wars-droid/
