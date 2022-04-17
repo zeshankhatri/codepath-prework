@@ -22,19 +22,19 @@ The following **required** functionality is complete:
 
 The following **optional** features are implemented:
 
-* [ ] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
+* [x] Any HTML page elements (including game buttons) has been styled differently than in the tutorial
 * [x] Buttons use a pitch (frequency) other than the ones in the tutorial
 * [x] More than 4 functional game buttons
 * [x] Playback speeds up on each turn
 * [x] Computer picks a different pattern each time the game is played
 * [x] Player only loses after 3 mistakes (instead of on the first mistake)
-* [ ] Game button appearance change goes beyond color (e.g. add an image)
-* [ ] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
+* [x] Game button appearance change goes beyond color (e.g. add an image)
+* [x] Game button sound is more complex than a single tone (e.g. an audio file, a chord, a sequence of multiple tones)
 * [ ] User has a limited amount of time to enter their guess on each turn
 
 The following **additional** features are implemented:
 
-- [ ] List anything else that you can get done to improve the app!
+* [x] Theme buttons that change background image when pressed
 
 ## Video Walkthrough (GIF)
 
@@ -47,12 +47,21 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
+Coding help:
 https://stackoverflow.com/questions/30035932/how-do-i-use-this-javascript-variable-in-html
-https://www.rapidtables.com/web/css/css-color.html#purple
 https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
+https://www.w3schools.com/html/html_images_background.asp
+https://www.w3schools.com/howto/howto_css_center_button.asp
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_js_background-image
+https://programminghead.com/how-to-play-audio-in-html-using-javascript/
+
+Assets and design:
+https://www.rapidtables.com/web/css/css-color.html
 https://jayuzumi.com/star-wars-soundboards
-https://wallpaperaccess.com/minimalist-star-wars-empire
+https://www.myinstants.com/instant/roger-roger-star-wars-droid/
+https://www.deviantart.com/rotane/art/Jedi-vs-Sith-WP-pack-wide-20636679
 https://wallpapersafari.com/w/Gt5v2h
+https://starwars-universe.fandom.com/wiki/R2-D2
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
