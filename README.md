@@ -35,6 +35,7 @@ The following **optional** features are implemented:
 The following **additional** features are implemented:
 
 * [x] Theme buttons that change background image when pressed
+* [x] Custom font
 
 ## Video Walkthrough (GIF)
 
