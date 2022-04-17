@@ -47,20 +47,20 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
 
-Coding help:
-https://stackoverflow.com/questions/30035932/how-do-i-use-this-javascript-variable-in-html
-https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random
-https://www.w3schools.com/html/html_images_background.asp
-https://www.w3schools.com/howto/howto_css_center_button.asp
-https://www.w3schools.com/cssref/tryit.asp?filename=trycss_js_background-image
+Coding help: \
+https://stackoverflow.com/questions/30035932/how-do-i-use-this-javascript-variable-in-html \
+https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Math/random \
+https://www.w3schools.com/html/html_images_background.asp \
+https://www.w3schools.com/howto/howto_css_center_button.asp \
+https://www.w3schools.com/cssref/tryit.asp?filename=trycss_js_background-image \
 https://programminghead.com/how-to-play-audio-in-html-using-javascript/
 
-Assets and design:
-https://www.rapidtables.com/web/css/css-color.html
-https://jayuzumi.com/star-wars-soundboards
-https://www.myinstants.com/instant/roger-roger-star-wars-droid/
-https://www.deviantart.com/rotane/art/Jedi-vs-Sith-WP-pack-wide-20636679
-https://wallpapersafari.com/w/Gt5v2h
+Assets and design: \
+https://www.rapidtables.com/web/css/css-color.html \
+https://jayuzumi.com/star-wars-soundboards \
+https://www.myinstants.com/instant/roger-roger-star-wars-droid/ \
+https://www.deviantart.com/rotane/art/Jedi-vs-Sith-WP-pack-wide-20636679 \
+https://wallpapersafari.com/w/Gt5v2h \
 https://starwars-universe.fandom.com/wiki/R2-D2
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
