@@ -10,29 +10,168 @@ html {
   box-sizing: inherit;
 }
 
+@font-face {
+  font-family: "Star Wars";
+  src: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/starwars.ttf?v=1650225818622');
+}
+
 /* adjust typography defaults */
 body {
   margin: 1rem;
   font-family: helvetica, arial, sans-serif;
   line-height: 1.5;
-  background-color: slategrey;
+  background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/jedi_background.jpg?v=1650148953618');
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-size: cover;
   color: white; 
 }
 
 h1{
-  font-family: verdana, arial, sans-serif;
+  font-family: "Star Wars", verdana, arial, sans-serif;
+  letter-spacing: 2px;
   color: beige;
+}
+
+#overlay, #overlay2 {
+  position: fixed;
+  width: 100%;
+  height: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background-color: rgba(0,0,0,0.5);
+  z-index: 2;
+}
+
+#instruct, #leaderboard{
+  position: absolute;
+  height:80%;
+  width:50%;
+  border-radius: 5px;
+  top: 50%;
+  left: 50%;
+  background-color:white;
+  color: black;
+  text-align:left;
+  align-items:center;
+  transform: translate(-50%,-50%);
+  -ms-transform: translate(-50%,-50%);
+  overflow:auto;
+  opacity: 0;
+  transition: opacity 0.25s;
+}
+
+#instruct, #leaderboard > p, h3 {
+  padding-left:5px;
+}
+
+#instruct.fade, #leaderboard.fade {
+  opacity:1;
+}
+
+h2 {
+  font-family: "Star Wars", verdana, arial, sans-serif;
+  letter-spacing:1px;
+  float:left;
+  margin:10px;
+}
+
+#x, #x2 {
+  font-family: "Star Wars", verdana, arial, sans-serif;
+  letter-spacing:1px;
+  font-size:100%;
+  float:right;
+  cursor: pointer;
+  margin:10px;
+}
+
+#instruct > p {
+  color:gray;
+}
+
+h3 {
+  clear:both;
+  font-family: "Star Wars", verdana, arial, sans-serif;
+  color:slategray;
+  letter-spacing:1px;
 }
 
 button{
   padding: 10px;
   border-radius: 10px;
+  cursor:pointer;
+}
+
+#game {
+  display: flex;
+}
+
+#game > button{
+  margin: 5px;
+}
+
+#unlimitedBtn {
+  background-color:beige;
+}
+
+#info {
+  height:20px;
+  width:20px;
+  border: 1px solid black;
+  border-radius: 50%;
+  line-height:18.5px;
+  font-size:16px;
+  text-align: center;
+  background-color:dodgerblue;
+  color:white;
+  cursor:pointer;
+}
+
+#leaderboardIcon {
+  filter:invert(100%);
+  margin-left:10px;
+  cursor:pointer;
+}
+
+#roundHeader {
+  clear:both;
+  padding-left:10px;
+  word-spacing:250px;
+}
+
+#results {
+  font:24px;
+}
+
+.row {
+  width: 50%;
+  display:flex;
+  justify-content:space-between;
+}
+
+#text {
+  width: 300px;
+}
+
+#strikes {
+  float:left;
+}
+
+#time {
+  float:right;
+}
+
+#gameButtonArea {
+  clear:both;
 }
 
 #gameButtonArea > button {
   width:200px;
   height:200px;
   margin:5px;
+  border-radius: 100px;
 }
 
 .hidden {
@@ -40,7 +179,7 @@ button{
 }
 
 #button1 {
-    background: lightgreen;
+    background: darkseagreen;
 }
 
 #button2 {
@@ -48,7 +187,7 @@ button{
 }
 
 #button3 {
-    background: pink;
+    background: tan;
 }
 
 #button4 {
@@ -56,35 +195,126 @@ button{
 }
 
 #button5 {
-    background: lavender;
+    background: lightgreen;
 }
 
 #button6 {
     background: lightcyan;
 }
 
+#button7 {
+    background: crimson;
+}
+
+#button8 {
+    background: gray;
+}
+
+#button9 {
+    background: slateblue;
+}
+
+#button10 {
+    background: beige;
+}
+
+#button11 {
+    background: peru;
+}
+
+#button12 {
+    background: ivory;
+}
+
 #button1:active, #button1.lit {
-    background:green;
+    background:seagreen;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/yoda.jpg?v=1650152826788');
+    background-size: cover;
 }
 
 #button2:active, #button2.lit {
     background:blue;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/r2d2.jpg?v=1650152807383');
+    background-size: cover;
 }
 
 #button3:active, #button3.lit {
-    background:red;
+    background:sienna;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/chewy.jpg?v=1650152833187');
+    background-size: cover;
 }
 
 #button4:active, #button4.lit {
     background:yellow;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/c3po.jpg?v=1650152834024');
+    background-size: cover;
 }
 
 #button5:active, #button5.lit {
-    background:purple;
+    background:green;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/luke.jpg?v=1650151948648');
+    background-size: cover;
 }
 
 #button6:active, #button6.lit {
     background:cyan;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/obiwan.jpg?v=1650152822971');
+    background-size: cover;
+}
+
+#button7:active, #button7.lit {
+    background:darkred;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/vader.jpg?v=1650166961636');
+    background-size: cover;
+}
+
+#button8:active, #button8.lit {
+    background:black;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/darthmaul.jpg?v=1650166954562');
+    background-size: cover;
+}
+
+#button9:active, #button9.lit {
+    background:darkslateblue;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/palpatine.jpg?v=1650166958767');
+    background-size: cover;
+}
+
+#button10:active, #button10.lit {
+    background:tan;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/b1.png?v=1650167453365');
+    background-size: cover;
+}
+
+#button11:active, #button11.lit {
+    background:saddlebrown;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/dooku.jpg?v=1650166955558');
+    background-size: cover;
+}
+
+#button12:active, #button12.lit {
+    background:white;
+    background-image: url('https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/grievous.png?v=1650167606898');
+    background-size: cover;
+}
+
+#themeButtons {
+    display: flex;
+    width: 80%;
+    justify-content: center;
+    padding: 10px;
+}
+
+#round {
+  margin-left:5px;
+}
+#themeButtons > button {
+    width: 60px;
+    margin: 5px;
+}
+
+#sithTheme {
+  background-color:beige;
 }
 
 /* images and videos max out at full width */
