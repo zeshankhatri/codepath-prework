@@ -48,12 +48,8 @@ If you recorded multiple GIFs for all the implemented features, you can add them
 ![Start/Stop](http://g.recordit.co/8okQTrtLNP.gif)
 ![Lose](http://g.recordit.co/NwoARqKGUi.gif)
 ![NormalWin](http://g.recordit.co/wsP0b2Sht8.gif)
-![Leaderboard](http://g.recordit.co/ft1VoQnBsS.gif)
-
-![Beginning](http://g.recordit.co/qFc3DGWXWI.gif)
-![Lose](http://g.recordit.co/u6dN8uU9PV.gif)
-![Win](hhttp://g.recordit.co/wsP0b2Sht8.gif)
-![Leaderboard](http://g.recordit.co/ft1VoQnBsS.gif)
+![Leaderboard](hhttp://g.recordit.co/BSDkU7vhr2.gif)
+![Adding to Leaderboard](https://ezgif.com/resize/ezgif-4-284099f8e2.gif)
 
 ## Reflection Questions
 1. If you used any outside resources to help complete your submission (websites, books, people, etc) list them here. 
