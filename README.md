@@ -45,9 +45,9 @@ The following **additional** features are implemented:
 ## Video Walkthrough (GIF)
 
 If you recorded multiple GIFs for all the implemented features, you can add them here:
-![Beginning](http://g.recordit.co/qFc3DGWXWI.gif)
+![Start/Stop](http://g.recordit.co/8okQTrtLNP.gif)
 ![Lose](http://g.recordit.co/NwoARqKGUi.gif)
-![NormalWin](hhttp://g.recordit.co/wsP0b2Sht8.gif)
+![NormalWin](http://g.recordit.co/wsP0b2Sht8.gif)
 ![Leaderboard](http://g.recordit.co/ft1VoQnBsS.gif)
 
 ![Beginning](http://g.recordit.co/qFc3DGWXWI.gif)
