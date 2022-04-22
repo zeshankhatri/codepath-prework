@@ -5,7 +5,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1" />
     <link rel="icon" href="https://glitch.com/favicon.ico" />
 
-    <title>Simon Says</title>
+    <title>Star Wars Memory Game</title>
 
     <!-- import the webpage's stylesheet -->
     <link rel="stylesheet" href="/style.css" />
@@ -13,24 +13,105 @@
     <!-- import the webpage's javascript file -->
     <script src="/script.js" defer></script>
   </head>
-  <body>
+  <body id="body">
     <!-- this is the start of content -->
-    <h1>Let's Play Simon Says!</h1>
+    <h1>May the Force be With You!</h1>
     <p>
-      Click "Start" to begin the game. <br> To begin, a button will light up and play
-      a sound, followed by an extra button each round. Press the buttons in the
-      pattern shown each round to win the game. <br> An incorrect button press will count as a strike and the pattern will play again. Three strikes lead to game over.<br> Game can be quit anytime by clicking "Stop".
+      Press the blue "i" icon for instructions on how to play the game or the stage icon
+      to see the leaderboard!
     </p>
-    <button id="startBtn" onclick="startGame()">Start</button>
-    <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
-    <p id="strikes" class="hidden"></p>
+    <div id="overlay" class="hidden">
+      <div id="instruct">
+        <div>
+          <h2>How to Play:</h2>
+          <p id="x" onclick="off(1)">Close x</p>
+        </div>
+        <h3>Normal Game:</h3>
+        <p>
+          Click "Start" to begin the game. 
+          <br> <br>
+          To begin, a button will light up and play a sound, followed by an extra button each 
+          round. Press the buttons in the pattern shown each round to win the game! 
+          <br><br>
+          Time running out or an incorrect button press will count as a strike and the pattern 
+          will play again. <b><u>Three strikes</u></b> lead to game over.
+        </p>
+        <h3>unlimited Game:</h3>
+        <p>
+          Click "Play Unlimited" to begin the game. 
+          <br> <br>
+          Concept is similar to the normal game except there's an infinite number of rounds, 
+          with the game only ending after <b><u>three strikes</u></b>.
+          <br> <br>
+          You will be notified about which round you reached when the game finishes, providing
+          you with an opportunity to add you name to the leaderboard.
+          <br> <br>
+          Either game can be quit anytime by clicking "Stop".
+        </p>
+      </div>
+    </div>
+    <div id="game">
+      <button id="startBtn" onclick="startGame('normal')">Start</button>
+      <button id="unlimitedBtn" onclick="startGame('unlimited')">Play Unlimited</button>
+      <p id="info" onclick="on(1)">&#9432</p>
+      <button id="stopBtn" class="hidden" onclick="stopGame()">Stop</button>
+      <img id="leaderboardIcon" onclick="on(2)" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/leaderboard-icon.png?v=1650598857318">
+    </div>
+    <div id="overlay2" class="hidden">
+      <div id="leaderboard">
+        <div>
+          <h2>Leaderboard:</h2>
+          <p id="x2" onclick="off(2)">Close x</p>
+        </div>
+        <h3 id="roundHeader">Player: Rounds:</h3>
+        <p id="results"></p>
+      </div>
+    </div>
+    <div id="text">
+      <p id="strikes" class="hidden"></p>
+      <p id="time" class="hidden"></p>      
+    </div>
     <div id="gameButtonArea">
-      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone()"></button>
-      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone()"></button>
-      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone()"></button>
-      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone()"></button>
-      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone()"></button>
-      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone()"></button>
+      <!-- Jedi buttons -->
+      <button id="button1" onclick="guess(1)" onmousedown="startTone(1)" onmouseup="stopTone(1)"></button>
+      <button id="button2" onclick="guess(2)" onmousedown="startTone(2)" onmouseup="stopTone(2)"></button>
+      <button id="button3" onclick="guess(3)" onmousedown="startTone(3)" onmouseup="stopTone(3)"></button>
+      <button id="button4" onclick="guess(4)" onmousedown="startTone(4)" onmouseup="stopTone(4)"></button>
+      <button id="button5" onclick="guess(5)" onmousedown="startTone(5)" onmouseup="stopTone(5)"></button>
+      <button id="button6" onclick="guess(6)" onmousedown="startTone(6)" onmouseup="stopTone(6)"></button>
+      
+      <!-- Sith buttons -->
+      <button id="button7" class="hidden" onclick="guess(7)" onmousedown="startTone(7)" onmouseup="stopTone(7)"></button>
+      <button id="button8" class="hidden" onclick="guess(8)" onmousedown="startTone(8)" onmouseup="stopTone(8)"></button>
+      <button id="button9" class="hidden" onclick="guess(9)" onmousedown="startTone(9)" onmouseup="stopTone(9)"></button>
+      <button id="button10" class="hidden" onclick="guess(10)" onmousedown="startTone(10)" onmouseup="stopTone(10)"></button>
+      <button id="button11" class="hidden" onclick="guess(11)" onmousedown="startTone(11)" onmouseup="stopTone(11)"></button>
+      <button id="button12" class="hidden" onclick="guess(12)" onmousedown="startTone(12)" onmouseup="stopTone(12)"></button>
+    </div>
+    <div>
+      <!-- Jedi audio -->
+      <audio id="audio1" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/yoda.mp3?v=1650150651324"></audio>
+      <audio id="audio2" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/r2d2.mp3?v=1650150649337"></audio>
+      <audio id="audio3" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/chewy.mp3?v=1650150641605"></audio>
+      <audio id="audio4" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/c3po.mp3?v=1650150634968"></audio>
+      <audio id="audio5" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/luke.mp3?v=1650150643916"></audio>
+      <audio id="audio6" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/obiwan.mp3?v=1650150647224"></audio>
+      
+      <!-- Sith audio -->
+      <audio id="audio7" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/vader.mp3?v=1650166945187"></audio>
+      <audio id="audio8" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/darthmaul.mp3?v=1650331412245"></audio>
+      <audio id="audio9" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/palpatine.mp3?v=1650166943498"></audio>
+      <audio id="audio10" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/b1.mp3?v=1650174329267"></audio>
+      <audio id="audio11" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/dooku.mp3?v=1650166940267"></audio>
+      <audio id="audio12" src="https://cdn.glitch.global/f70659ab-3f14-4ee6-a6d3-ef5eea3f7da2/grievous.mp3?v=1650166941775"></audio>
+    </div>
+    <p id="round" class="hidden"></p>
+    <div id="themeButtons">
+      <p>
+        Pick a theme:
+      </p>
+      <button id="jediTheme" onclick="changeTheme('jedi')">Jedi</button>
+      <button id="sithTheme" onclick="changeTheme('sith')">Sith</button>
     </div>
   </body>
 </html>
