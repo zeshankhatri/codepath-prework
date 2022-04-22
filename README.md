@@ -80,7 +80,7 @@ https://wallpapersafari.com/w/Gt5v2h \
 https://starwars-universe.fandom.com/wiki/R2-D2 \
 https://www.dafont.com/star-jedi.font \
 https://stackoverflow.com/questions/33878539/is-there-an-html-entity-for-an-info-icon \
-https://icons8.com/icons/set/leaderboard \
+https://icons8.com/icons/set/leaderboard
 
 2. What was a challenge you encountered in creating this submission (be specific)? How did you overcome it? (recommended 200 - 400 words) 
 
